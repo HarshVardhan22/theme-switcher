@@ -1,16 +1,16 @@
 .list{
     display: flex;
+    height: 15px;
+    min-width: 250px;
     align-items: center;
     justify-content: center;
-    min-width: 35vh;
-    height: 4vh ;
-    border-radius: 14px;
     font:18px;
     background: linear-gradient(145deg, #485157, #3c4449);
     box-shadow:  5px 5px 10px #222629, -5px -5px 10px #65727a;
-    margin: 10px;
-    border-radius: 2px;
+    margin: 15px;
+    border-radius: 14px;
     color: white;
+    padding: 10px;
 }
 
 .delete{
@@ -21,9 +21,12 @@
     background: linear-gradient(145deg, #485157, #3c4449);
     box-shadow:  5px 5px 10px #222629, -5px -5px 10px #65727a;
     font-weight: bolder;
-    position: fixed;
-    left: 62.55%;
+    margin-left: 20px;
     border: none;
+}
+
+.listItem{
+    height: 40px;
 }
 
 .delete:focus{
