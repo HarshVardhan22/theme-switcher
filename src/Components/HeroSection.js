@@ -25,6 +25,8 @@ const HeroSection = () => {
             style={{
               backgroundColor: `${currentTheme.backgroundColor}`,
               color: `${currentTheme.textColor}`,
+              borderRadius: `${currentTheme.borderRadius}`,
+              boxShadow: `${currentTheme.boxShadow}`,
             }}
           />
 

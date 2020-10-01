@@ -24,9 +24,7 @@ form{
             display:flex;
             flex-direction: column;
             min-height: 550px;
-            min-width: 400px;
-            /*background-color: #434c51;*/
-            border-radius: 50px;
+            min-width: 350px;
             box-shadow: 20px 20px 60px #222629, -20px -20px 60px #65727a;
             border-radius: 50px;
             position: relative;
@@ -88,4 +86,10 @@ form{
 
 .addBtn:focus{
     outline: none;
+}
+
+@media screen and (min-width: 480px) {
+  form {
+    min-width:300 ;
+  }
 }

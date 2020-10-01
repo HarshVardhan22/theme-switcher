@@ -5,7 +5,7 @@ import HeroSection from "./Components/HeroSection";
 
 
 const App = () => {
- const themeHook = useState("light");
+ const themeHook = useState("dark");
   return(
     <ThemeContext.Provider value={themeHook}>
       <div>
