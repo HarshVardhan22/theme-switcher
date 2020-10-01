@@ -12,14 +12,19 @@ const HeroSection = () => {
     const currentTheme = AppTheme[theme];
     
     return (
-      <div className="header" style={{
-        backgroundColor: `${currentTheme.backgroundColor}`,
-        color: `${currentTheme.textColor}`}} >
+      <div className= "container">
+        <div
+          className="header"
+          style={{
+            backgroundColor: `${currentTheme.backgroundColor}`,
+            color: `${currentTheme.textColor}`,
+          }}
+        >
+          <h1 className="h1">To-Do List</h1>
+          <Form />
 
-        <h1 className = "h1">To-Do List</h1>
-        <Form/>
-        
-        <ThemeToggler />
+          <ThemeToggler />
+        </div>
       </div>
     );
 }

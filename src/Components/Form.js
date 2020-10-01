@@ -8,12 +8,15 @@ const Form = () => {
         key: ''
     })
 
-    const [item,setItem] = useState([])
- 
+    const [item, setItem] = useState([])
+
+
     const deleteItem = (key)=>{
         const filteredItems = item.filter(item => item.key!==key);
         setItem(filteredItems);
     }
+   
+    
     const HandleInput = (e) => {
         e.preventDefault();
         setData({
@@ -35,17 +38,18 @@ const Form = () => {
             )
         }
     }
-   
+    
+    
     console.log(item);
     return (
         <header>
         <form className="top">
 
-            <input type="text" className="input" value = {data.text} onChange={HandleInput} />
+            <input type="text" className="input" placeholder="Enter Task Here" value = {data.text} onChange={HandleInput} />
 
             <button className="addBtn" onClick={AddItem}> Add Task </button>
 
-            <ListItem className="items" items={item} deleteItem={deleteItem}></ListItem>
+            <ListItem className="items" items={item} deleteItem={deleteItem} ></ListItem>
 
         </form>
         </header>

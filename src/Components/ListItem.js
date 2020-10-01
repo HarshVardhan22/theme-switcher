@@ -1,21 +1,22 @@
 import React from "react";
+
 import './ListItem.css';
 
 
-const ListItem = ({items,deleteItem}) => {
-    const listItems = items.map(item=>{
-        return (
-          <div className="list" key={item.key}>
-            <p>
-              {item.text}
-              <button className="delete" onClick={()=> deleteItem(item.key)}>X</button>
-            </p>
-          </div>
-        );
-    })
+const ListItem = ({ items, deleteItem, update }) => {
+  const listItems = items.map((item) => {
     return (
-        <div>{listItems}</div>
-    )
-}
+      <div className="list" key={item.key}>
+        <p>
+          {item.text}
+          <button className="delete" onClick={() => deleteItem(item.key)}>
+            X
+          </button>
+        </p>
+      </div>
+    );
+  });
+  return <div>{listItems}</div>;
+};
 
 export default ListItem;
